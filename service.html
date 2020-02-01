@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<title>Service | Inspire - Junior-Entreprise de Télécom Saint-Étienne</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<head>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-text-white">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right w3-animate-zoom"
+        href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" id="myNavbar_logo" class="w3-bar-item w3-button w3-display-topmiddle w3-hide"><img
+          src="images/logo.png" class="w3-round w3-image w3-animate-opacity" alt="Logo Inspire" width="70"
+          height="46"></a>
+      <a href="actualite.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Actualité</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Offre de service</a>
+      <a href="nous.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Qui sommes-nous
+        ?</a>
+      <a href="formulaire.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-text-black">
+        <i class="fa fa-search"></i> Déposer une demande
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="actualite.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Actualité</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Offre de service</a>
+      <a href="nous.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Qui sommes-nous ?</a>
+      <a href="formulaire.html" class="w3-bar-item w3-button">Déposer une demande </a>
+    </div>
+  </div>
+
+  <!-- L'équipe -->
+  <div class="equipe-banner w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-jumbo w3-text-black w3-wide">Qui sommes-nous ?</span>
+    </div>
+  </div>
+
+  <div class="w3-row w3-center inspire-blue w3-padding-16">
+    <div class="w3-quarter w3-section bordure">
+      <span class="w3-xlarge">4</span><br>
+      Partenaires Inspire
+    </div>
+    <div class="w3-quarter w3-section bordure">
+      <span class="w3-xlarge">4</span><br>
+      Partenaires CNJE
+    </div>
+    <div class="w3-quarter w3-section bordure">
+      <span class="w3-xlarge">20</span><br>
+      Études réalisées
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">10</span><br>
+      Ans d'expertise
+    </div>
+  </div>
+
+  <!-- Nos compétences -->
+
+  <!-- logo antenne -->
+  <div class=" w3-quarter w3-white test-shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+      enable-background="new 0 0 64 64">
+      <path fill="#94989b" d="m28.412 51.568h-8.853l-2.038 12.432h12.926z"></path>
+      <path fill="#d0d0d0" d="m22.4 51.568l-7.538-8.75-3.353 21.18h12.929z"></path>
+      <g fill="#42ade2">
+        <path
+          d="m38.744 8.695c2.786 2.312 5.704 4.968 8.627 7.89s5.578 5.841 7.89 8.627c-.31-3.132-2.417-7.125-5.905-10.612-3.488-3.487-7.48-5.595-10.612-5.905">
+        </path>
+        <path
+          d="m63.955 26.602c-.5-5.04-3.895-11.474-9.511-17.09-5.615-5.616-12.05-9.01-17.09-9.512 4.487 3.724 9.187 8 13.895 12.706 4.708 4.709 8.983 9.409 12.706 13.896">
+        </path>
+      </g>
+      <path fill="#d0d0d0"
+        d="m63.23 59.18c-9.537 9.539-30.357 4.184-46.5-11.959-16.14-16.14-21.498-36.965-11.96-46.5l58.46 58.46"></path>
+      <ellipse transform="matrix(.7071.7071-.7071.7071 31.2-15.11)" fill="#94989b" cx="33.847" cy="30.11" rx="41.34"
+        ry="9.224"></ellipse>
+      <path fill="#d0d0d0"
+        d="m32.938 33.467c-.644.688-1.75.699-2.448 0-.701-.7-.69-1.806-.001-2.449l13.264-11.952 1.137 1.137-11.952 13.264">
+      </path>
+      <circle fill="#333" cx="43.09" cy="20.871" r="3.861"></circle>
+    </svg>
+  </div>
+
+  <!-- Menu Container -->
+  <div class="w3-container w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-content">
+
+      <h1 class="w3-center w3-xxxlarge" style="margin-bottom:64px">Nos compétences</h1>
+      <div class="w3-row w3-center">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+          <div class="s4">
+            <div class="w3-white test-shadow w3-col s4 tablink w3-padding-large">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                class="icon">
+                <path fill="#94989b" d="m28.412 51.568h-8.853l-2.038 12.432h12.926z"></path>
+                <path fill="#d0d0d0" d="m22.4 51.568l-7.538-8.75-3.353 21.18h12.929z"></path>
+                <g fill="#42ade2">
+                  <path
+                    d="m38.744 8.695c2.786 2.312 5.704 4.968 8.627 7.89s5.578 5.841 7.89 8.627c-.31-3.132-2.417-7.125-5.905-10.612-3.488-3.487-7.48-5.595-10.612-5.905">
+                  </path>
+                  <path
+                    d="m63.955 26.602c-.5-5.04-3.895-11.474-9.511-17.09-5.615-5.616-12.05-9.01-17.09-9.512 4.487 3.724 9.187 8 13.895 12.706 4.708 4.709 8.983 9.409 12.706 13.896">
+                  </path>
+                </g>
+                <path fill="#d0d0d0"
+                  d="m63.23 59.18c-9.537 9.539-30.357 4.184-46.5-11.959-16.14-16.14-21.498-36.965-11.96-46.5l58.46 58.46">
+                </path>
+                <ellipse transform="matrix(.7071.7071-.7071.7071 31.2-15.11)" fill="#94989b" cx="33.847" cy="30.11"
+                  rx="41.34" ry="9.224"></ellipse>
+                <path fill="#d0d0d0"
+                  d="m32.938 33.467c-.644.688-1.75.699-2.448 0-.701-.7-.69-1.806-.001-2.449l13.264-11.952 1.137 1.137-11.952 13.264">
+                </path>
+                <circle fill="#333" cx="43.09" cy="20.871" r="3.861"></circle>
+              </svg>
+            </div>
+          </div>
+
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+          <div class="s4">
+            <div class="w3-white test-shadow w3-col s4 tablink w3-padding-large">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                class="icon">
+                <path fill="#212528" d="M64,4c0-2-2-4-4-4H4C2,0,0,2,0,4v41h64V4z" />
+                <path fill="#ddd" d="M0,45v4c0,2,2,4,4,4h56c2,0,4-2,4-4v-4H0z" />
+                <path fill="#bfbebe" d="m24 57c0 2.777-3.603 4-8 4v3h32v-3c-4.397 0-8-1.223-8-4v-4h-16v4" />
+                <path fill="#3e4347" d="m4 4h56v38h-56z" />
+                <g fill="#94989b">
+                  <circle cx="32" cy="49" r="1" />
+                  <path d="m16 61h32v3h-32z" />
+                </g>
+                <g fill="#636c72">
+                  <path d="m56 42h-18l-14-38h18z" />
+                  <path d="m29.5 42h-5l-14-38h5z" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+          <div class="s4">
+            <div class="w3-white test-shadow w3-col s4 tablink w3-padding-large">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                class="icon">
+                <path transform="matrix(.7072-.707.707.7072-17.829 43.04)" fill="#b0bdc6"
+                  d="m40.18 40.847h5.727v4.393h-5.727z" />
+                <path transform="matrix(.7069-.7073.7073.7069-17.829 43.06)" fill="#dfe9ef"
+                  d="m41.554 40.847h2.982v4.392h-2.982z" />
+                <path transform="matrix(.7072-.707.707.7072-17.452 42.13)" fill="#b0bdc6"
+                  d="m39.27 41.22h5.727v1.819h-5.727z" />
+                <circle fill="#dfe9ef" cx="24.703" cy="24.703" r="24.703" />
+                <circle fill="#b0bdc6" cx="24.703" cy="24.703" r="22.23" />
+                <circle fill="#fff" cx="24.703" cy="24.703" r="20.586" />
+                <path fill="#dfe9ef"
+                  d="m36.34 29.631c-6.952 6.951-18.219 6.951-25.17.002-1.84-1.84-3.177-3.986-4.04-6.271-.473 5.09 1.235 10.343 5.132 14.239 6.949 6.947 18.217 6.947 25.17 0 5.11-5.111 6.449-12.553 4.04-18.897-.37 3.987-2.08 7.874-5.132 10.927" />
+                <path transform="matrix(.7071-.7071.7071.7071-21.29 51.4)" fill="#333"
+                  d="m46.17 41.02h10.471v20.755h-10.471z" />
+                <path transform="matrix(.7069-.7073.7073.7069-21.29 51.42)" fill="#575b5e"
+                  d="m48.538 41.02h5.727v20.757h-5.727z" />
+                <path fill="#b0bdc6"
+                  d="m63.894 54.33c1.219 1.219-8.339 10.777-9.559 9.559l-.749-.75c-1.218-1.219 8.341-10.777 9.558-9.558l.75.749" />
+                <path fill="#dfe9ef"
+                  d="m62.3 55.923c1.22 1.22-5.158 7.599-6.378 6.378l-.749-.748c-1.22-1.219 5.159-7.597 6.378-6.379l.749.749" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+        <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+        <hr>
+
+        <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+        <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+        <hr>
+
+        <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+        <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+        <hr>
+
+        <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+        <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+        <hr>
+
+        <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span
+            class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+        <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+        <hr>
+
+        <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span
+            class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+        <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+      </div>
+
+      <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span
+            class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+        <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+        <hr>
+
+        <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+        <p class="w3-text-grey">Ravioli filled with cheese</p>
+        <hr>
+
+        <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+        <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+        <hr>
+
+        <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+        <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+      </div>
+
+
+      <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span
+            class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+        <p class="w3-text-grey">Ask the waiter</p>
+        <hr>
+
+        <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+        <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+        <hr>
+
+        <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+        <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+        <hr>
+
+        <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+        <p class="w3-text-grey">Tomatoes and mozzarella</p>
+      </div><br>
+
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Client -->
+  <div onclick="accordeon('faq client')"
+    class="pointer client-banner w3-display-container w3-opacity-min unselectable w3-topbar w3-hover-opacity">
+    <div class="w3-display-middle">
+      <span class="w3-xxxlarge w3-text-white w3-wide ombrage">FAQ Client</span>
+    </div>
+  </div>
+
+  <div id="faq client" class="w3-container w3-hide w3-center">
+    <div class="w3-quarter w3-section hide-small-device"></div>
+    <div class="w3-half w3-section w3-bar-block">
+      <button onclick="accordeon('q1 client')" class="w3-bar-item w3-button w3-center accordion w3-light-grey">
+        Vous n’êtes que des étudiants</button>
+      <div id="q1 client" class="w3-container w3-left-align w3-hide">
+        <p class="txtbleu">Certes mais particulièrement motivés, audits annuels, … </p>
+      </div>
+
+      <button onclick="accordeon('q2 client')"
+        class="w3-bar-item w3-button w3-center accordion w3-light-grey w3-margin-top">
+        Je n’ai pas de cahier des charges, est-ce-que je peux quand même faire appel à vos services ?</button>
+      <div id="q2 client" class="w3-container w3-left-align w3-hide">
+        <p class="txtbleu">Oui, tkt</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- etudiant -->
+  <div onclick="accordeon('faq etudiant')"
+    class="pointer etudiant-banner w3-display-container w3-opacity-min unselectable w3-topbar w3-hover-opacity">
+    <div class="w3-display-middle">
+      <span class="w3-xxxlarge w3-text-white w3-wide ombrage">FAQ Étudiant</span>
+    </div>
+  </div>
+
+  <div id="faq etudiant" class="w3-container w3-hide w3-center">
+    <div class="w3-quarter w3-section hide-small-device"></div>
+    <div class="w3-half w3-section w3-bar-block">
+      <button onclick="accordeon('q1 etudiant')" class="w3-bar-item w3-button w3-center accordion">
+        Explications claires sur la différence entre admins et consultants</button>
+
+      <div id="q1 etudiant" class="w3-container w3-left-align w3-hide">
+        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+      </div>
+
+      <button onclick="accordeon('q2 etudiant')" class="w3-bar-item w3-button w3-center accordion w3-margin-top">
+        Détails pour les démarches</button>
+      <div id="q2 etudiant" class="w3-container w3-left-align w3-hide">
+        <p>BV à signer, entretien, …</p>
+      </div>
+
+      <button onclick="accordeon('q3 etudiant')" class="w3-bar-item w3-button w3-center accordion w3-margin-top">
+        Insister sur la flexibilité par rapport aux cours</button>
+      <div id="q3 etudiant" class="w3-container w3-left-align w3-hide">
+        <p>on peut mettre plusieurs consultants sur un même projet</p>
+      </div>
+
+      <button onclick="accordeon('q4 etudiant')" class="w3-bar-item w3-button w3-center accordion w3-margin-top">
+        Suggérer d’aller au Club Info si manque de compétence</button>
+      <div id="q4 etudiant" class="w3-container w3-left-align w3-hide">
+        <p>Va au club info</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer attention il a un w3-topbar en plus -->
+  <footer class="w3-center inspire-blue w3-topbar">
+    <div class="w3-center inspire-blue w3-padding-64 w3-content">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Retour en haut</a>
+      <div class="w3-margin-top w3-row w3-center w3-large">
+
+        <div class="w3-row">
+
+          <div class="w3-quarter w3-section">
+            <div class="footer_logo">
+              <img src="images/Inspire_Logotype.svg" alt="Logo d'Inspire" style="width:120px;" />
+            </div>
+            <p class="no-margin">Junior-Entreprise de Télécom<br>Saint-Étienne</p>
+          </div>
+          <div class="w3-quarter w3-section">
+            <h4>À propos</h4>
+            <p class="no-margin">Mentions légales<br>Presse et assets</p>
+          </div>
+          <div class="w3-quarter w3-section">
+            <h4>Nous contacter</h4>
+            <p class="no-margin"><i class="fa fa-envelope w3-xlarge"></i> Formulaire de contact</p>
+            <h4>Inspire</h4>
+            <p class="no-margin"><a href="https://goo.gl/maps/uEpKSnAgLY8qGY688" class=" w3-hover-opacity"
+                rel="nofollow external" target="_blank" style="text-decoration: none"><i
+                  class="fa fa-map-marker w3-xlarge"></i> 25 Rue du Docteur Rémy Annino
+                <br>42000 Saint-Étienne</a>
+              <br><br><i class="fa fa-phone w3-xlarge"></i> +33 (0) 4 77 91 58 75</p>
+          </div>
+          <div class="w3-quarter w3-section">
+            <h4>Nous suivre</h4>
+            <a href="https://www.facebook.com/Inspire.Telecom/" style="margin-right: 4px"><i
+                class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="https://www.instagram.com/inspire_je/" style="margin-right: 4px"><i
+                class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="https://twitter.com/Inspire_Telecom" style="margin-right: 4px"><i
+                class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="https://www.linkedin.com/company/inspire-telecom/" style="margin-right: 4px"><i
+                class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="https://www.viadeo.com/fr/company/inspire"><i
+                class="fa fa-viadeo w3-hover-opacity w3-xxlarge"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-center inspire-deep-blue w3-padding-small w3-small">
+      <p>© 2008-2019 Inspire · Junior-Entreprise de Télécom Saint-Étienne — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (!x.className.includes("locked")) {
+        var navbar = document.getElementById("myNavbar");
+        var navbar_logo = document.getElementById("myNavbar_logo");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          if (!navbar.className.includes("w3-white")) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            navbar_logo.className = navbar_logo.className.replace(" w3-hide", "");
+          }
+        } else {
+          navbar.className = "w3-bar";
+          navbar_logo.className = " w3-bar-item" + " w3-button" + " w3-display-topmiddle" + " w3-hide";
+        }
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      var navbar = document.getElementById("myNavbar");
+      var navbar_logo = document.getElementById("myNavbar_logo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show w3-animate-top locked";
+        navbar.className = "w3-bar" + " w3-card" + " w3-white";
+        navbar_logo.className = navbar_logo.className.replace(" w3-hide", "");
+      } else {
+        x.className = x.className.replace(" w3-show w3-animate-top locked", "");
+        if (!(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)) {
+          navbar.className = navbar.className.replace(" w3-card w3-white", "");
+          navbar_logo.className = " w3-bar-item" + " w3-button" + " w3-display-topmiddle" + " w3-hide";
+        }
+      }
+    }
+
+    // test pour l'accordéon
+    function accordeon(id) {
+      var x = document.getElementById(id);
+      var y = x.previousElementSibling;
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        y.className += " active";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+        y.className = y.className.replace(" active", "");
+      }
+    }
+
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" test-shadow-hover", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " test-shadow-hover";
+    }
+    document.getElementById("myLink").click();
+
+  </script>
+
+</body>
+
+</html>

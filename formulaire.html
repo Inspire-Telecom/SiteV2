@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<title>Contact | Inspire - Junior-Entreprise de Télécom Saint-Étienne</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<head><link rel="icon" type="image/png" href="images/favicon.png" /></head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-text-white">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right w3-animate-zoom"
+        href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" id="myNavbar_logo" class="w3-bar-item w3-button w3-display-topmiddle w3-hide"><img
+          src="images/logo.png" class="w3-round w3-image w3-animate-opacity" alt="Logo Inspire" width="70"
+          height="46"></a>
+      <a href="actualite.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Actualité</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Offre de service</a>
+      <a href="nous.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Qui sommes-nous
+        ?</a>
+      <a href="formulaire.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-text-black">
+        <i class="fa fa-search"></i> Déposer une demande
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="actualite.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Actualité</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Offre de service</a>
+      <a href="nous.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Qui sommes-nous ?</a>
+      <a href="formulaire.html" class="w3-bar-item w3-button">Déposer une demande </a>
+    </div>
+  </div>
+
+  <!-- L'équipe -->
+  <div class="equipe-banner w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxxlarge w3-text-black w3-wide">Formulaire de contact</span>
+    </div>
+  </div>
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <div class="w3-row w3-padding-32 w3-section" id="contact">
+      <form id="contactForm" action="https://formspree.io/contact@inspire-telecom.com" method="POST">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <label class="no-margin w3-text-black">Prénom</label>
+            <input class="w3-input w3-border w3-margin-bottom" id="prenom" type="text" placeholder="Pierre"
+              name="prenom" required>
+          </div>
+          <div class="w3-half">
+            <label class="no-margin w3-text-black">Nom</label>
+            <input class="w3-input w3-border w3-margin-bottom" id="nom" type="text" placeholder="Dupond" name="nom"
+              required>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <label class="no-margin w3-text-black">Email</label>
+            <input class="w3-input w3-border w3-margin-bottom" id="email" type="email"
+              placeholder="pierre.dupond@inspire-telecom.com" name="_replyto" required>
+          </div>
+          <div class="w3-half">
+            <label class="no-margin w3-text-black">Téléphone</label>
+            <input class="w3-input w3-border w3-margin-bottom" id="tel" type="tel" placeholder="0123456789" name="tel">
+          </div>
+        </div>
+        <label class="no-margin w3-text-black">Société</label>
+        <input class="w3-input w3-border w3-margin-bottom" id="societe" type="text" placeholder="Inspire, inc"
+          name="societe" required>
+        <label class="no-margin w3-text-black">Sujet</label>
+        <select class="w3-select w3-border w3-margin-bottom" id="sujet" name="_subject" required>
+          <option value="" disabled selected hidden>Sujet</option>
+          <option value="Général">Général</option>
+          <option value="Devis">Demande de devis</option>
+        </select>
+        <label class="no-margin w3-text-black">Message</label>
+        <textarea class="w3-input w3-border w3-margin-bottom" id="message"
+          placeholder="Nous souhaitons échanger avec vous..." name="message" required></textarea>
+        <input type="hidden" name="_subject" value="test" />
+        <button class="w3-button inspire-blue w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> Envoyer
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center inspire-blue">
+    <div class="w3-center inspire-blue w3-padding-64 w3-content">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Retour en haut</a>
+      <div class="w3-margin-top w3-row w3-center w3-large">
+
+        <div class="w3-row">
+
+          <div class="w3-quarter w3-section">
+            <div class="footer_logo">
+              <img src="images/Inspire_Logotype.svg" alt="Logo d'Inspire" style="width:120px;" />
+            </div>
+            <p class="no-margin">Junior-Entreprise de Télécom<br>Saint-Étienne</p>
+          </div>
+          <div class="w3-quarter w3-section">
+            <h4>À propos</h4>
+            <p class="no-margin">Mentions légales<br>Presse et assets</p>
+          </div>
+          <div class="w3-quarter w3-section">
+            <h4>Nous contacter</h4>
+            <p class="no-margin"><i class="fa fa-envelope w3-xlarge"></i> Formulaire de contact</p>
+            <h4>Inspire</h4>
+            <p class="no-margin"><a href="https://goo.gl/maps/uEpKSnAgLY8qGY688" rel="nofollow external" class=" w3-hover-opacity" target="_blank" style="text-decoration: none"><i
+                  class="fa fa-map-marker w3-xlarge"></i> 25 Rue du Docteur Rémy Annino
+                <br>42000 Saint-Étienne</a>
+              <br><br><i class="fa fa-phone w3-xlarge"></i> +33 (0) 4 77 91 58 75</p>
+          </div>
+          <div class="w3-quarter w3-section">
+            <h4>Nous suivre</h4>
+            <a href="https://www.facebook.com/Inspire.Telecom/" style="margin-right: 4px"><i
+                class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="https://www.instagram.com/inspire_je/" style="margin-right: 4px"><i
+                class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="https://twitter.com/Inspire_Telecom" style="margin-right: 4px"><i
+                class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="https://www.linkedin.com/company/inspire-telecom/" style="margin-right: 4px"><i
+                class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="https://www.viadeo.com/fr/company/inspire"><i
+                class="fa fa-viadeo w3-hover-opacity w3-xxlarge"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-center inspire-deep-blue w3-padding-small w3-small">
+      <p>© 2008-2019 Inspire · Junior-Entreprise de Télécom Saint-Étienne — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (!x.className.includes("locked")) {
+        var navbar = document.getElementById("myNavbar");
+        var navbar_logo = document.getElementById("myNavbar_logo");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          if (!navbar.className.includes("w3-white")) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            navbar_logo.className = navbar_logo.className.replace(" w3-hide", "");
+          }
+        } else {
+          navbar.className = "w3-bar";
+          navbar_logo.className = " w3-bar-item" + " w3-button" + " w3-display-topmiddle" + " w3-hide";
+        }
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      var navbar = document.getElementById("myNavbar");
+      var navbar_logo = document.getElementById("myNavbar_logo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show w3-animate-top locked";
+        navbar.className = "w3-bar" + " w3-card" + " w3-white";
+        navbar_logo.className = navbar_logo.className.replace(" w3-hide", "");
+      } else {
+        x.className = x.className.replace(" w3-show w3-animate-top locked", "");
+        if (!(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)) {
+          navbar.className = navbar.className.replace(" w3-card w3-white", "");
+          navbar_logo.className = " w3-bar-item" + " w3-button" + " w3-display-topmiddle" + " w3-hide";
+        }
+      }
+    }
+
+    // test pour l'accordéon
+    function accordeon(id) {
+      var x = document.getElementById(id);
+      var y = x.previousElementSibling;
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        y.className += " active";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+        y.className = y.className.replace(" active", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

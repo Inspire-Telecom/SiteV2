@@ -1,0 +1,283 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+
+.bgimg-1, .inspire-banner, .equipe-banner, .client-banner, .etudiant-banner {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+
+.bgimg-1 {
+    background-image: url('../video/Working-Space.gif');
+    min-height: 100%;
+}
+
+/* Second image (inspire-banner) */
+
+.inspire-banner {
+    background-image: url("../images/banner.jpg");
+    min-height: 400px;
+}
+
+/* Third image (equipe-banner) */
+
+.equipe-banner {
+    background-image: url("../images/equipe.jpg");
+    min-height: 400px;
+}
+
+/* client-banner */
+
+.client-banner {
+    background-image: url("../images/client.jpg");
+    min-height: 500px;
+}
+
+/*etudiant-banner*/
+
+.etudiant-banner {
+    background-image: url("../images/etudiant.jpg");
+    min-height: 500px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+/* plus petit sur mobile */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .inspire-banner, .equipe-banner, .client-banner, .etudiant-banner {
+        min-height: 300px;
+    }
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+/* @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .inspire-banner, .equipe-banner {
+        background-attachment: scroll;
+    }
+} */
+
+/* Couleurs Inspire */
+
+.inspire-blue {
+    color: #fff!important;
+    background-color: rgb(1, 85, 134)!important
+}
+
+.inspire-deep-blue {
+    color: #fff!important;
+    background-color: rgb(42, 45, 101)!important
+}
+
+.inspire-light-blue {
+    color: #fff!important;
+    background-color: rgb(99, 199, 231)!important
+}
+
+.inspire-grey {
+    color: #fff!important;
+    background-color: rgb(87, 83, 89)!important
+}
+
+.footer_logo {
+    background: #fff;
+    padding: 7px 18px 7px 10px;
+    display: inline-block;
+    border-radius: 35px;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+#myNavbar_logo {
+    padding-bottom: 5px;
+}
+
+/* Pour avoir un peu d'ombre */
+
+.ombrage {
+    text-shadow: -1px 0 rgba(0, 0, 0, 0.3), 0 1px rgba(0, 0, 0, 0.3), 1px 0 rgba(0, 0, 0, 0.3), 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Pour la vidéo youtube */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* ### pour l'accordéon */
+
+/* couleurs */
+
+.accordion {
+    color: #fff!important;
+    background-color: rgb(1, 85, 134)!important;
+    border-radius: 6px;
+}
+
+.active {
+    color: #fff!important;
+    background-color: rgb(42, 45, 101)!important;
+}
+
+.accordion:hover {
+    color: #fff!important;
+    background-color: rgb(42, 45, 101)!important;
+}
+
+/* éviter que le bouton garde la même couleur après avoir été cliqué sur mobile*/
+
+@media only screen and (max-device-width: 1024px) {
+    .accordion:focus.active {
+        color: #fff!important;
+        background-color: rgb(42, 45, 101)!important;
+    }
+    .accordion:focus:not(.active) {
+        color: #fff!important;
+        background-color: rgb(1, 85, 134)!important;
+    }
+    .accordion:hover.active {
+        color: #fff!important;
+        background-color: rgb(42, 45, 101)!important;
+    }
+    .accordion:hover:not(.active) {
+        color: #fff!important;
+        background-color: rgb(1, 85, 134)!important;
+    }
+}
+
+/* ajoutter l'icone + et - */
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\2796';
+    /* Unicode character for "minus" sign (-) */
+}
+
+/* rendre le texte non selectionnable (utile pour les banner) */
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* hide on small screen */
+
+@media only screen and (max-device-width: 1024px) {
+    .hide-small-device {
+        display: none;
+    }
+}
+
+/* bordure */
+
+.bordure {
+    border-right: 1px solid #ccc!important;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .bordure {
+        border-right: 0;
+    }
+}
+
+.uniform-padding {
+    padding: 8px 8px 8px 8px;
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .part {
+        width: 49.99999%;
+    }
+}
+
+/* .test-shadow{
+    width: 140px;
+    height: 140px;
+    margin-bottom: -20px;
+    padding: 30px;
+    transition: box-shadow ease-out 0.2s;
+    margin: 0px auto;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(10, 10, 10, 0.25);
+    border-image: initial;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-out 0s;
+} */
+
+.test-shadow {
+    width: 150px!important;
+    height: 150px!important;
+    margin-left: 4%!important;
+    margin-right: 4%!important;
+    padding: 30px;
+    margin: 0px auto;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(10, 10, 10, 0.25);
+    border-image: initial;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-out 0s;
+}
+
+.icon {
+    max-width: 90%;
+    margin-top: 15%;
+}
+
+.test-shadow:hover, .test-shadow-hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px;
+}
